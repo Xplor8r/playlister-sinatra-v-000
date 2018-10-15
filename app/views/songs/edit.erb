@@ -5,7 +5,7 @@
 
     <h2>Name <input type="text" name="song[name]" id="name" value="<%= @song.name %>"></h2>
 
-    <h2><label>Artist Name <input type="text" name="artist[name]" value="<%= @song.artist.name %>" id="artist_name"></label></h2>
+    <h2>Artist Name <input type="text" name="artist[name]" value="<%= @song.artist.name %>" id="artist_name"></h2>
 
     <h2><label> Genres </label></h2>
       <p><% Genre.all.each do |genre| %>
