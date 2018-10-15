@@ -8,7 +8,7 @@
 
     <h2><label> Genres </label></h2>
       <p>  <% Genre.all.each do |genre| %>
-    <input id="<%= genre.name %>" type="checkbox" name="genres[]" value="<%= genre.id %>">
+    <input id="<%= genre.name %>" type="checkbox" name="genres[]" value="<%= genre.id %>"><%= genre.name %></input>
   <% end %>
 
       </p>
